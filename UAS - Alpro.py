@@ -1,5 +1,3 @@
-import sys
-
 # Function | Digunakan untuk Menampilkan Menu serta Input untuk memilih pilihan yang muncul pada daftar
 def menu():
     print("Daftar Pilihan: ")
@@ -18,7 +16,7 @@ def plus_tag():
     item_tag = input("Masukan nama barang, press enter jika tidak ada barang: ")
     if item_tag == '':
         print("Program dihentikan karena tidak ada barang yang dimasukkan.")
-        sys.exit()
+        return None
     qty_tag = int(input(f"Jumlah barang {item_tag}        : "))
     pcy_tag = int(input(f"Masukan harga barang {item_tag}  : ")) 
     item_info = {
